@@ -2,7 +2,7 @@
 {
     enum Cor
     {
-        Branca,
-        Amarela
+        Rosa,
+        Azul
     }
 }

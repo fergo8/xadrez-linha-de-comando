@@ -29,15 +29,15 @@ namespace xadrez_linha_de_comando
 
         public static void ImprimirPeca(Peca peca)
         {
-            if(peca.Cor == Cor.Branca)
-                Console.Write(peca);
+            ConsoleColor aux = Console.ForegroundColor;
+
+            if (peca.Cor == Cor.Rosa)
+                Console.ForegroundColor = ConsoleColor.Magenta;
             else
-            {
-                ConsoleColor aux = Console.ForegroundColor;
-                Console.ForegroundColor = ConsoleColor.Yellow;
-                Console.Write(peca);
-                Console.ForegroundColor = aux;
-            }
+                Console.ForegroundColor = ConsoleColor.Blue;
+            
+            Console.Write(peca);
+            Console.ForegroundColor = aux;
         }
     }
 }

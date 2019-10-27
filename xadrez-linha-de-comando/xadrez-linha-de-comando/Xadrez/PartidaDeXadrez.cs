@@ -11,9 +11,10 @@ namespace xadrez
 
         public PartidaDeXadrez()
         {
+            Console.ForegroundColor = ConsoleColor.DarkGray;
             Tabuleiro = new Tabuleiro(8, 8);
             Turno = 1;
-            JogadorAtual = Cor.Branca;
+            JogadorAtual = Cor.Rosa;
             ColocarPecas();
         }
 
@@ -30,9 +31,9 @@ namespace xadrez
 
         private void ColocarPecas()
         {
-            Tabuleiro.ColocarPeca(new Torre(Tabuleiro, Cor.Branca), new PosicaoXadrez('C', 1).ToPosicao());
-            Tabuleiro.ColocarPeca(new Torre(Tabuleiro, Cor.Branca), new PosicaoXadrez('C', 2).ToPosicao());
-            Tabuleiro.ColocarPeca(new Rei(Tabuleiro, Cor.Amarela), new PosicaoXadrez('C', 3).ToPosicao());
+            Tabuleiro.ColocarPeca(new Torre(Tabuleiro, Cor.Rosa), new PosicaoXadrez('C', 1).ToPosicao());
+            Tabuleiro.ColocarPeca(new Torre(Tabuleiro, Cor.Rosa), new PosicaoXadrez('C', 2).ToPosicao());
+            Tabuleiro.ColocarPeca(new Rei(Tabuleiro, Cor.Azul), new PosicaoXadrez('C', 3).ToPosicao());
         }
     }
 }
