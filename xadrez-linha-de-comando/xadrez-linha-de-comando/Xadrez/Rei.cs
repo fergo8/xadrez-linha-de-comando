@@ -73,6 +73,8 @@ namespace xadrez
 
             if (Tabuleiro.PosicaoValida(Posicao) && PodeMover(Posicao))
                 matriz[Posicao.Linha, Posicao.Coluna] = true;
+
+            return matriz;
         }
     }
 }

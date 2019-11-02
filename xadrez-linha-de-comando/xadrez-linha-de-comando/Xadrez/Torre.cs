@@ -69,6 +69,8 @@ namespace xadrez
 
                 Posicao.Coluna = Posicao.Coluna - 1;
             }
+
+            return matriz;
         }
     }
 }
